@@ -11,11 +11,9 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
   const mapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {
-    if (mapRef.current) return; // Harita zaten oluşturulmuşsa tekrar oluşturma
+    if (mapRef.current) return;
     const map = L.map("map", {
       zoomControl: false,
-      // maxZoom: 25, // Maksimum zoom seviyesini burada ayarlıyoruz
-      // minZoom: 5, // Minimum zoom seviyesini de ayarlayabilirsiniz
     }).setView([center.lat, center.lng], 11);
 
     mapRef.current = map;
@@ -43,7 +41,6 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
           fillColor: "red",
           fillOpacity: 0.5,
           radius: 220000,
-          
         }).addTo(map);
       }
     });
