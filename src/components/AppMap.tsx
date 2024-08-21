@@ -1,12 +1,6 @@
-import { useEffect } from "react";
-import Map from "ol/Map";
-import { View } from "ol";
-import VectorSource from "ol/source/Vector";
-import GeoJSON from "ol/format/GeoJSON";
-import VectorLayer from "ol/layer/Vector";
-import TileLayer from "ol/layer/Tile";
-import { OSM } from "ol/source";
-import countries from "../countries.json";
+import L from "leaflet";
+import countries from "../countries";
+import { useEffect, useRef } from "react";
 
 interface MapProps {
   center: { lat: number; lng: number };
@@ -14,41 +8,45 @@ interface MapProps {
 }
 
 const AppMap: React.FC<MapProps> = ({ center, style }) => {
-  let map: Map;
-  console.log(countries);
-  const view = new View({
-    center: [center.lng, center.lat],
-    zoom: 3,
-  });
-
-  const vectorSource = new VectorSource({
-    format: new GeoJSON(),
-    features: new GeoJSON().readFeatures({ ...countries }),
-  });
-
-  console.log(vectorSource);
-
-  const countryLayers = [
-    new VectorLayer({
-      source: vectorSource,
-      style: {
-        "fill-color": ["string", ["get", "COLOR"], "#eee"],
-      },
-    }),
-  ];
-
-  const layer = new TileLayer({
-    source: new OSM(),
-  });
-
-  const mapInstance = new Map({
-    view,
-    layers: [layer, ...countryLayers],
-  });
+  const mapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {
-    map = mapInstance;
-    map.setTarget("map");
+    if (mapRef.current) return; // Harita zaten oluşturulmuşsa tekrar oluşturma
+    const map = L.map("map", {
+      zoomControl: false,
+      // maxZoom: 25, // Maksimum zoom seviyesini burada ayarlıyoruz
+      // minZoom: 5, // Minimum zoom seviyesini de ayarlayabilirsiniz
+    }).setView([center.lat, center.lng], 11);
+
+    mapRef.current = map;
+
+    L.tileLayer(
+      `http://tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg?key=${process.env.REACT_APP_MAPTILER_API_KEY}`,
+      {
+        attribution: "© OpenStreetMap contributors",
+        crossOrigin: true,
+      }
+    ).addTo(map);
+
+    countries.features.forEach((country) => {
+      L.geoJSON(country, {
+        style: {
+          color: "black",
+          weight: 0.5,
+          fillColor: "red",
+          fillOpacity: 0.5,
+        },
+      }).addTo(map);
+      if (country.lat && country.lng) {
+        L.circle([country.lat, country.lng], {
+          color: "red",
+          fillColor: "red",
+          fillOpacity: 0.5,
+          radius: 220000,
+          
+        }).addTo(map);
+      }
+    });
   }, [center]);
 
   return (
