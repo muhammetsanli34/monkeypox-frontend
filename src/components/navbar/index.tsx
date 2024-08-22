@@ -23,7 +23,7 @@ export default function Navbar() {
             
           "
           >
-            HOME
+            ANA SAYFA
           </a>
           <a
             className="no-underline text-black 
@@ -32,7 +32,7 @@ export default function Navbar() {
 
           "
           >
-            MONKEYPOX
+            MAYMUN ÇİÇEĞİ
           </a>
           <a
             className="no-underline text-black
@@ -40,7 +40,7 @@ export default function Navbar() {
             animation duration-300 ease-in-out text-lg
             "
           >
-            SYMPTOMS
+            BELİRTİLER
           </a>
           <a
             className="no-underline text-black 
@@ -49,7 +49,7 @@ export default function Navbar() {
           
           "
           >
-            PREVENTION
+            KORUNMA
           </a>
         </div>
       </div>
