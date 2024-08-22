@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import casesJson from "../cases.json";
 
 interface CaseData {
   country: string;
@@ -10,10 +11,10 @@ interface CaseData {
 }
 
 export default function useCases() {
-  const [cases, setCases] = useState<Array<CaseData> | null>(null);
+  const [cases, setCases] = useState<Array<CaseData> | null>(null);
 
   const fetchCases = async () => {
-    fetch("http://trackmonkeypox.com:8000/get_all_data", {
+    fetch("https://trackmonkeypox.com:8000/get_all_data", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -23,7 +24,7 @@ export default function useCases() {
       .then((data) => {
         setCases(data.monkey_pox_cases);
       })
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => setCases(casesJson.monkey_pox_cases));
   };
 
   const calculatedCases = useMemo(() => {
@@ -49,7 +50,7 @@ export default function useCases() {
   }, [cases]);
 
   const totalCases = useMemo(() => {
-    return cases?.reduce((acc, curr) => acc + curr.cases, 0) ;
+    return cases?.reduce((acc, curr) => acc + curr.cases, 0);
   }, [cases]);
 
   const totalDeaths = useMemo(() => {

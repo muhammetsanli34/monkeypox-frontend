@@ -8,13 +8,13 @@
   font-family: "Axios Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Axios Pro Regular"), url("../fonts/AxiosPro-Regular.otf") format("woff");
+  src: local("Axios Pro Regular"),
+    url("../fonts/AxiosPro-Regular.otf") format("woff");
 }
 
 body {
   font-family: "Axios Pro Regular";
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  background-color: #f4f4f4;
+  background-color: white;
 }
