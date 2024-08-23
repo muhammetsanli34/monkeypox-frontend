@@ -63,7 +63,7 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
           },
         })
           .bindPopup(
-            `<b>${country.properties.name}</b><br>Cases: ${calculatedCases[iso3]}<br>Deaths: ${deathsByCountry[iso3]}`
+            `<b>${country.properties.name}</b><br>Vaka Sayısı: ${calculatedCases[iso3]}<br>Ölümler: ${deathsByCountry[iso3]}`
           )
           .addTo(map);
         if (country.lat && country.lng) {
@@ -72,7 +72,11 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
             fillColor: "red",
             fillOpacity: 0.5,
             radius: Math.sqrt(calculatedCases[iso3]) * 5000,
-          }).addTo(map);
+          })
+            .addTo(map)
+            .bindPopup(
+              `<b>${country.properties.name}</b><br>Vaka Sayısı: ${calculatedCases[iso3]}<br>Ölümler: ${deathsByCountry[iso3]}`
+            );
         }
       }
     });
