@@ -1,6 +1,6 @@
 export default function Spread() {
   return (
-    <div className="flex gap-8 items-start mt-24 container mx-auto">
+    <div className="flex gap-8 items-start mt-24 container mx-auto flex-wrap">
       <img
         src="spread.jpg"
         alt="Maymun Çiçeği Nasıl Yayılır"

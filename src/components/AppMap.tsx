@@ -79,7 +79,10 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
   }, [cases]);
 
   return (
-    <div id="map" style={{ height: "650px", width: "100%", ...style }}></div>
+    <div
+      id="map"
+      style={{ height: "650px", width: "100%", zIndex: 2, ...style }}
+    ></div>
   );
 };
 

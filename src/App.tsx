@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages";
 import Symptoms from "./pages/symptoms";
 import Layout from "./layout";
+import Monkeypox from "./pages/monkeypox";
 
 function App() {
   const layouted = (element: JSX.Element) => {
@@ -16,8 +17,12 @@ function App() {
       element: layouted(<Home />),
     },
     {
-      path: "/symptoms",
+      path: "/belirtiler",
       element: layouted(<Symptoms />),
+    },
+    {
+      path: "/maymun-cicegi",
+      element: layouted(<Monkeypox />),
     },
   ]);
   return (
