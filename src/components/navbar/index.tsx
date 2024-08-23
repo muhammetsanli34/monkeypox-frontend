@@ -20,7 +20,7 @@ export default function Navbar() {
               to="/"
               className="no-underline text-black
             hover:text-primary hover:border-2 hover:border-main cursor-pointer  hover:rounded-md p-2
-            animation duration-300 ease-in-out text-lg
+            animation duration-300 ease-in-out text-lg font-semibold
             "
             >
               CANLI VERİ
@@ -29,7 +29,7 @@ export default function Navbar() {
               to="/belirtiler"
               className="no-underline text-black
             hover:text-primary hover:border-2 hover:border-main cursor-pointer  hover:rounded-md p-2
-            animation duration-300 ease-in-out text-lg
+            animation duration-300 ease-in-out text-lg font-semibold
             "
             >
               BELİRTİLER
@@ -38,7 +38,7 @@ export default function Navbar() {
               to="/maymun-cicegi"
               className="no-underline text-black
             hover:text-primary hover:border-2 hover:border-main cursor-pointer  hover:rounded-md p-2
-            animation duration-300 ease-in-out text-lg
+            animation duration-300 ease-in-out text-lg font-semibold
             "
             >
               MAYMUN ÇİÇEĞİ
