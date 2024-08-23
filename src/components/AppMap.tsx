@@ -27,7 +27,7 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
     }
     const map = L.map("map", {
       zoomControl: false,
-    }).setView([center.lat, center.lng], 2);
+    }).setView([center.lat, center.lng], 4);
 
     mapRef.current = map;
     L.tileLayer(
@@ -81,7 +81,7 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
   return (
     <div
       id="map"
-      style={{ height: "650px", width: "100%", zIndex: 2, ...style }}
+      style={{ height: "600px", width: "100%", zIndex: 2, ...style }}
     ></div>
   );
 };

@@ -31,7 +31,7 @@ export default function CaseSummary() {
           >
             Monkeypox Update
           </h3>
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 flex-wrap">
             <div
               className="
               bg-white  p-8 rounded-lg flex justify-between items-center flex-1
