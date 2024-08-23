@@ -3,22 +3,26 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Home from "./pages";
 import Symptoms from "./pages/symptoms";
+import Layout from "./layout";
 
 function App() {
+  const layouted = (element: JSX.Element) => {
+    return <Layout>{element}</Layout>;
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: layouted(<Home />),
     },
     {
       path: "/symptoms",
-      element: <Symptoms />,
+      element: layouted(<Symptoms />),
     },
   ]);
   return (
     <div className="App">
-      <Navbar />
-      <RouterProvider router={router} />
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
