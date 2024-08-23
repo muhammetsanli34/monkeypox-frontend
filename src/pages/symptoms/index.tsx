@@ -54,54 +54,29 @@ export default function Symptoms() {
         "
         >
           <div
-            className="flex
+            className="flex items-center
           "
           >
-            <img src="/lesion.jpg" alt="lesion" className="symptomImages" />
-            <div className="bg-gray-50 text-gray-600 p-4 hidden lg:block flex-1">
-              Mpox'un yaygın belirtileri genellikle iki ila dört hafta süren
-              ateş, baş ağrısı, kas ve sırt ağrıları, düşük enerji seviyesi ve
-              şişmiş lenf düğümleri ile başlar. Bu belirtiler, ciltte
-              döküntülerin ortaya çıkmasıyla devam edebilir. Döküntüler,
-              kabarcıklara benzer şekilde yüz, avuç içleri, ayak tabanları,
-              kasıklar, genital ve anal bölgeler, ağız, boğaz ve gözleri
-              etkileyebilir. Bu yaraların sayısı bireysel olarak değişiklik
-              gösterebilir ve bir ila birkaç bin arasında olabilir.
-            </div>
+            <img src="/spots.png" alt="lesion" className="symptomImages" />
+            <h2 className="text-2xl font-bold">
+              Lenf düğümlerinde şişme , <br />
+              deri döküntüleri
+            </h2>
           </div>
           <div
-            className="flex
+            className="flex items-center
           "
           >
-            <img src="/fever.jpg" alt="lesion" className="symptomImages" />
-            <div className="bg-gray-50 text-gray-600 p-4 hidden lg:block">
-              Mpox'un bir diğer belirtisi de ateştir.
-            </div>
+            <img src="/fever.png" alt="lesion" className="symptomImages" />
+            <h2 className="text-2xl font-bold">Ateş</h2>
           </div>
-          <div className="flex">
-            <img src="/backache.webp" alt="lesion" className="symptomImages" />
-            {/* </div> */}
-            <div className="bg-gray-50 text-gray-600 p-4 hidden lg:block">
-              Mpox bulaşan kişilerde sırt ağrısı bir diğer belirtidir.
-            </div>
+          <div className="flex items-center">
+            <img src="/backache.png" alt="lesion" className="symptomImages" />
+            <h2 className="text-2xl font-bold">Sırt Ağrısı</h2>
           </div>
-          <div className="flex">
-            {/* <div
-              className="
-                bg-red-200
-                flex justify-center items-center
-              text-gray-600 p-4
-              "
-              style={{
-                height: "300px",
-                width: "300px",
-              }}
-            > */}
-            <img src="/headache.jpg" alt="lesion" className="symptomImages" />
-            {/* </div> */}
-            <div className="bg-gray-50 text-gray-600 p-4 hidden lg:block">
-              Mpox'un ilk belirtilerinden birisi baş ağrısı olabilir.
-            </div>
+          <div className="flex items-center">
+            <img src="/headache.png" alt="lesion" className="symptomImages" />
+            <h2 className="text-2xl font-bold">Baş Ağrısı</h2>
           </div>
         </div>
       </div>
