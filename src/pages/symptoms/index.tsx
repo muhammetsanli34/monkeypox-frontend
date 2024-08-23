@@ -51,6 +51,7 @@ export default function Symptoms() {
         gap-4
         mt-8
         md:grid-cols-2
+        mx-auto
         "
         >
           <div
