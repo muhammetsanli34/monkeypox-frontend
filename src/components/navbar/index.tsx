@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MobileMenu from "../mobile-menu";
+import menuItems from "../../constants/menuItems";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden justify-around items-center text-sm lg:flex">
           <div className="flex space-x-4">
-            <Link
+            {/* <Link
               to="/"
               className="no-underline text-black
             hover:text-primary hover:border-2 hover:border-main cursor-pointer  hover:rounded-md p-2
@@ -42,7 +43,19 @@ export default function Navbar() {
             "
             >
               MAYMUN ÇİÇEĞİ
-            </Link>
+            </Link> */}
+            {menuItems.map((item, index) => (
+              <Link
+                to={item.link}
+                key={index}
+                className="no-underline text-black
+                  hover:text-primary hover:border-2 hover:border-main cursor-pointer  hover:rounded-md p-2
+                  animation duration-300 ease-in-out text-lg font-semibold
+                  "
+              >
+                {item.text}
+              </Link>
+            ))}
           </div>
         </div>
         <MobileMenu />

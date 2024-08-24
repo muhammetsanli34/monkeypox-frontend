@@ -5,10 +5,10 @@ export default [
   },
   {
     text: "BELİRTİLER",
-    link: "/symptoms",
+    link: "/belirtiler",
   },
   {
     text: "MAYMUN ÇİÇEĞİ",
     link: "/maymun-cicegi",
-  }
+  },
 ];
