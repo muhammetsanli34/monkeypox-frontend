@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./style.css";
+import style from "./style.module.css";
 
 export default function AccordionItem({
   question,
@@ -14,9 +14,13 @@ export default function AccordionItem({
 }) {
   const contentHeight = useRef<HTMLDivElement | null>(null);
   return (
-    <div className="wrapper">
+    <div className={style.wrapper}>
       <button
-        className={`question-container ${isOpen ? "active" : ""}`}
+        className={
+          isOpen
+            ? style.questionContainer + " " + style.active
+            : style.questionContainer
+        }
         onClick={onClick}
       >
         <p className="question-content">{question}</p>
@@ -25,18 +29,17 @@ export default function AccordionItem({
 
       <div
         ref={contentHeight}
-        className="answer-container"
+        className={style.answerContainer}
         style={
           isOpen
             ? { height: contentHeight?.current?.scrollHeight }
             : { height: "0px" }
         }
       >
-        {/* <p className="answer-content">{answer}</p> */}
         {answer
           ? typeof answer === "string"
             ? answer.split("\n").map((item, index) => (
-                <p key={index} className="answer-content">
+                <p key={index} className={style.answerContent}>
                   {item}
                 </p>
               ))

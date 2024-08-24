@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-487f833f95487663.js",
+      "static/chunks/fd9d1056-95542c12c8153870.js",
+      "static/chunks/23-786e8251b25fab5a.js",
+      "static/chunks/main-app-850e90a803b1f144.js",
+      "static/chunks/app/_not-found/page-85e0197de3d349ed.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-487f833f95487663.js",
+      "static/chunks/fd9d1056-95542c12c8153870.js",
+      "static/chunks/23-786e8251b25fab5a.js",
+      "static/chunks/main-app-850e90a803b1f144.js",
+      "static/css/8f20e5d87bace450.css",
+      "static/chunks/791-203b11d1d32edbf1.js",
+      "static/chunks/app/layout-5f457f87f540e4d8.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-487f833f95487663.js",
+      "static/chunks/fd9d1056-95542c12c8153870.js",
+      "static/chunks/23-786e8251b25fab5a.js",
+      "static/chunks/main-app-850e90a803b1f144.js",
+      "static/chunks/app/page-95dfbdf5d4a97b7c.js"
+    ],
+    "/maymun-cicegi/page": [
+      "static/chunks/webpack-487f833f95487663.js",
+      "static/chunks/fd9d1056-95542c12c8153870.js",
+      "static/chunks/23-786e8251b25fab5a.js",
+      "static/chunks/main-app-850e90a803b1f144.js",
+      "static/css/06591e1f69d6cfbd.css",
+      "static/chunks/318-a51298674da7f5b7.js",
+      "static/chunks/app/maymun-cicegi/page-ead2577b13a1537f.js"
+    ],
+    "/belirtiler/page": [
+      "static/chunks/webpack-487f833f95487663.js",
+      "static/chunks/fd9d1056-95542c12c8153870.js",
+      "static/chunks/23-786e8251b25fab5a.js",
+      "static/chunks/main-app-850e90a803b1f144.js",
+      "static/css/00367487cc8a5021.css",
+      "static/chunks/app/belirtiler/page-8bfbc0c2cc6f497d.js"
+    ]
+  }
+}

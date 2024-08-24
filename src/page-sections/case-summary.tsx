@@ -1,7 +1,8 @@
+"use client";
 import useCases from "../hooks/useCases";
 
 export default function CaseSummary() {
-  const { cases, totalCases, totalDeaths } = useCases();
+  const { totalCases, totalDeaths } = useCases();
 
   return (
     <div

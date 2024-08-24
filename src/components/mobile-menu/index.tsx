@@ -1,13 +1,12 @@
-import { useEffect, useState } from "react";
+"use client";
+
+import { useState } from "react";
 import menuItems from "../../constants/menuItems";
-import { Link } from "react-router-dom";
+import style from "./style.module.css";
+import Link from "next/link";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    console.log(isOpen);
-  }, [isOpen]);
 
   return (
     <>
@@ -18,19 +17,16 @@ export default function MobileMenu() {
         md:hidden
       "
         onClick={() => {
-          console.log("clickedd");
           setIsOpen(!isOpen);
         }}
       ></i>
       {isOpen && (
         <div
-          className="absolute top-0 left-0 h-screen w-8/12 bg-white z-50 shadow-lg
-            animateSlideInRight
-        "
+          className={`absolute top-0 left-0 h-screen w-8/12 bg-white z-50 shadow-lg ${style.animateSlideInRight}`}
           id="mobile-menu"
         >
           <div className="flex flex-col gap-4 pt-4">
-            <Link to="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <img src="logo.png" alt="logo" width={50} />
               <h1 className="text-lg font-bold">
                 TRACK MONKEY
@@ -40,15 +36,18 @@ export default function MobileMenu() {
               </h1>
             </Link>
             {menuItems.map((item) => (
-              <a
-                href={item.link}
-                className="text-lg
-                font-semibold
-              "
-                key={item.text}
-              >
-                {item.text}
-              </a>
+              // <a
+              //   href={item.link}
+              //   className="text-lg
+              //   font-semibold
+              // "
+              //   key={item.text}
+              // >
+              //   {item.text}
+              // </a>
+              <Link href={item.link} key={item.text}>
+                <a className="text-lg font-semibold">{item.text}</a>
+              </Link>
             ))}
           </div>
           <i

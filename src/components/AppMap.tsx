@@ -1,16 +1,8 @@
+"use client";
 import L from "leaflet";
 import countries from "../countries.json";
 import { useEffect, useMemo, useRef } from "react";
 import useCases from "../hooks/useCases";
-
-interface CaseData {
-  country: string;
-  iso3: string;
-  who_region: string;
-  month_lab: string;
-  cases: number;
-  deaths: number;
-}
 
 interface MapProps {
   center: { lat: number; lng: number };
