@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import menuItems from "../../constants/menuItems";
 import style from "./style.module.css";
-import Link from "next/link";
+import Link from "next/navigation";
+import useLocale from "../../hooks/useLocale";
+import useMenuItems from "../../hooks/useMenuItems";
+import Locale from "../../types/locale";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const locale = useLocale();
+  const menuItems = useMenuItems((locale as Locale) || "en");
   return (
     <>
       <i
@@ -35,7 +38,7 @@ export default function MobileMenu() {
                 </span>
               </h1>
             </Link>
-            {menuItems.map((item) => (
+            {menuItems?.map((item) => (
               // <a
               //   href={item.link}
               //   className="text-lg

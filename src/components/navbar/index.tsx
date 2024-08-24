@@ -1,8 +1,15 @@
+"use client";
+
 import MobileMenu from "../mobile-menu";
-import menuItems from "../../constants/menuItems";
 import Link from "next/link";
+import useMenuItems from "../../hooks/useMenuItems";
+import Locale from "../../types/locale";
+import useLocale from "../../hooks/useLocale";
 
 export default function Navbar() {
+  const locale = useLocale();
+  const menuItems = useMenuItems((locale as Locale) || "en");
+
   return (
     <div className="container mx-auto">
       <div className="flex justify-between items-center py-4">
@@ -17,7 +24,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden justify-around items-center text-sm lg:flex">
           <div className="flex space-x-4">
-            {menuItems.map((item, index) => (
+            {menuItems?.map((item, index) => (
               <Link
                 href={item.link}
                 key={index}
