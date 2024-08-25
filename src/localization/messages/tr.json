@@ -33,6 +33,7 @@
         "deaths": "Ölüm Sayısı"
     },
     "symptoms": {
+        "banner_title": "Maymun Çiçeği Belirtileri",
         "paragraph1": "Mpox'un yaygın belirtileri genellikle iki ila dört hafta süren ateş, baş ağrısı, kas ve sırt ağrıları, düşük enerji seviyesi ve şişmiş lenf düğümleri ile başlar.",
         "paragraph2": "Mpox geçiren kişiler, ciltlerindeki tüm kabarcıklar kabuk bağlayıp düştükten ve altında yeni bir deri tabakası oluşana kadar bulaşıcı kabul edilir. Bu süreç genellikle iki ila dört hafta sürer. Mpox geçirdikten sonra, hastalık yeniden bulaşabilir.",
         "paragraph3": "Hastalığın şiddetli seyretmesi durumunda, lezyonların şiddetini azaltmak ve iyileşme süresini hızlandırmak amacıyla hastane tedavisi, destekleyici bakım ve antiviral ilaçlar gerekebilir. Mpox virüsü, enfekte bir hayvandan veya virüs taşıyan başka bir insandan bulaşabilir.",
@@ -44,6 +45,7 @@
         "breadcrumb": "Maymun Çiçeği Belirtiler"
     },
     "monkeypox": {
+        "banner_title": "Maymun Çiçeği",
         "title": "Sıkça Sorulan Sorular",
         "breadcrumb": "Maymun Çiçeği Hakkında",
         "question1": "Maymun Çiçeği Nedir?",

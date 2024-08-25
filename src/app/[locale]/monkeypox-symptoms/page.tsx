@@ -13,15 +13,15 @@ export default function Symptoms() {
   return (
     <div>
       <Overlay
-        title="Mpox Belirtileri"
+        title={t("symptoms.banner_title")}
         breadcrumb={[
           {
             link: "/",
-            text: "Anasayfa",
+            text: "Home"
           },
           {
             link: "/symptoms",
-            text: "Mpox Belirtileri",
+            text: t("symptoms.breadcrumb"),
           },
         ]}
       />
