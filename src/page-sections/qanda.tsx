@@ -98,7 +98,7 @@ export default function QandA() {
               <p className="text-lg">{t("monkeypox.answer6p2")}</p>
               <p className="text-lg">{t("monkeypox.answer6p3")}</p>
               <ul className="list-disc pl-6 text-lg my-4">
-                {t("monkeypox.answer6listElements")
+                {t("monkeypox.answer6listElements1")
                   .split(".")
                   .map((item) => item && <li>{item}</li>)}
               </ul>
@@ -115,9 +115,7 @@ export default function QandA() {
           question: t("monkeypox.question7"),
           answer: (
             <>
-              <p className="text-lg">{t("monkeypox.answer7p1")}</p>
-              <p className="text-lg">{t("monkeypox.answer7p2")}</p>
-              <p className="text-lg">{t("monkeypox.answer7p3")}</p>
+              <p className="text-lg">{t("monkeypox.answer7")}</p>
             </>
           ),
         },
