@@ -31,7 +31,9 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
     ).addTo(map);
 
     const getColor = (cases: number) => {
-      if (cases >= 0 && cases <= 10) {
+      if (cases === 0) {
+        return "#FFFFFF";
+      } else if (cases >= 0 && cases <= 10) {
         return "#FFCCCC";
       } else if (cases > 10 && cases <= 100) {
         return "#FF6666";
@@ -43,33 +45,36 @@ const AppMap: React.FC<MapProps> = ({ center, style }) => {
       return "#FFCCCC";
     };
 
-    Object.keys(calculatedCases).forEach((iso3) => {
-      const country = countries.features.find((country) => country.id === iso3);
-      if (country) {
-        L.geoJSON(country, {
-          style: {
-            color: "black",
-            weight: 0.5,
-            fillColor: getColor(calculatedCases[iso3]),
-            fillOpacity: 0.5,
-          },
+    countries.features.forEach((country) => {
+      const iso3 = country.id;
+      if (!(iso3 in calculatedCases)) {
+        calculatedCases[iso3] = 0;
+        deathsByCountry[iso3] = 0;
+      }
+
+      L.geoJSON(country, {
+        style: {
+          color: "black",
+          weight: 0.5,
+          fillColor: getColor(calculatedCases[iso3]),
+          fillOpacity: 0.5,
+        },
+      })
+        .bindPopup(
+          `<b>${country.properties.name}</b><br>Vaka Sayısı: ${calculatedCases[iso3]}<br>Ölümler: ${deathsByCountry[iso3]}`
+        )
+        .addTo(map);
+      if (country.lat && country.lng) {
+        L.circle([country.lat, country.lng], {
+          color: calculatedCases[iso3] > 0 ? "red" : "white",
+          fillColor: "red",
+          fillOpacity: 0.5,
+          radius: Math.sqrt(calculatedCases[iso3]) * 5000,
         })
+          .addTo(map)
           .bindPopup(
             `<b>${country.properties.name}</b><br>Vaka Sayısı: ${calculatedCases[iso3]}<br>Ölümler: ${deathsByCountry[iso3]}`
-          )
-          .addTo(map);
-        if (country.lat && country.lng) {
-          L.circle([country.lat, country.lng], {
-            color: "red",
-            fillColor: "red",
-            fillOpacity: 0.5,
-            radius: Math.sqrt(calculatedCases[iso3]) * 5000,
-          })
-            .addTo(map)
-            .bindPopup(
-              `<b>${country.properties.name}</b><br>Vaka Sayısı: ${calculatedCases[iso3]}<br>Ölümler: ${deathsByCountry[iso3]}`
-            );
-        }
+          );
       }
     });
   }, [cases]);
