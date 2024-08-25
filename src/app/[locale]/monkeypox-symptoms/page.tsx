@@ -2,20 +2,26 @@ import { useTranslations } from "next-intl";
 import Overlay from "../../../components/overlay";
 import Spread from "../../../page-sections/spread";
 import style from "./style.module.css";
+import getMetaData from "../../../actions/getMetaData";
+
+export async function generateMetadata() {
+  return await getMetaData();
+}
+
 export default function Symptoms() {
   const t = useTranslations();
   return (
     <div>
       <Overlay
-        title="Mpox Belirtileri"
+        title={t("symptoms.banner_title")}
         breadcrumb={[
           {
             link: "/",
-            text: "Anasayfa",
+            text: "Home"
           },
           {
             link: "/symptoms",
-            text: "Mpox Belirtileri",
+            text: t("symptoms.breadcrumb"),
           },
         ]}
       />

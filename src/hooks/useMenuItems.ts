@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 
 export default function useMenuItems() {
   const t = useTranslations();
-  console.log(t);
   return [
     {
       // text: dictionary?.navbar?.home,

@@ -1,14 +1,19 @@
-"use client";
-import { useTranslations } from "use-intl";
 import Overlay from "../../../components/overlay";
 import QandACarousel from "../../../page-sections/QandaCarousel";
 import QandA from "../../../page-sections/qanda";
+import getMetaData from "../../../actions/getMetaData";
+import { useTranslations } from "next-intl";
+
+export async function generateMetadata() {
+  return await getMetaData();
+}
+
 export default function MonkeypoxPage() {
   const t = useTranslations();
   return (
     <>
       <Overlay
-        title="Maymun Çiçeği"
+        title={t("monkeypox.banner_title")}
         breadcrumb={[
           {
             link: "/",
@@ -23,7 +28,7 @@ export default function MonkeypoxPage() {
 
       <div className="container mx-auto mt-12">
         <h2 className="text-4xl text-left font-bold text-primary mt-12">
-          Sıkça Sorulan Sorular
+          {t("monkeypox.title")}
         </h2>
         <hr className="w-64 mr-auto border-2 border-primary my-6" />
 

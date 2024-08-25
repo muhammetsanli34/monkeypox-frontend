@@ -33,6 +33,7 @@
         "paragraph2": "As far as scientists know, the Mpox virus can remain on clothes, bedding, towels, objects, electronic devices, and surfaces that an infected person has come into contact with for some time. A person who touches these items and then touches their eyes, nose, or mouth without washing their hands can contract the virus."
     },
     "symptoms": {
+        "banner_title": "Monkeypox Symptoms",
         "paragraph1": "The common symptoms of Mpox typically begin with fever, headache, muscle and back pain, low energy levels, and swollen lymph nodes, usually lasting two to four weeks.",
         "paragraph2": "Individuals with Mpox are considered contagious until all the blisters on their skin have scabbed over, fallen off, and a new layer of skin has formed underneath. This process generally takes two to four weeks. After recovering from Mpox, the disease can be contracted again.",
         "paragraph3": "If the disease progresses severely, hospital treatment, supportive care, and antiviral medications may be necessary to reduce the severity of the lesions and speed up the recovery process. The Mpox virus can be transmitted from an infected animal or another person carrying the virus.",
@@ -44,6 +45,7 @@
         "breadcrumb": "Mpox Symptoms"
     },
     "monkeypox": {
+        "banner_title": "About Monkeypox",
         "title": "Frequently Asked Questions",
         "breadcrumb": "About Monkeypox",
         "question1": "What is Monkeypox?",

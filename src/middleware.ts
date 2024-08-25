@@ -14,7 +14,6 @@ const intlMiddleware = createMiddleware({
 export function middleware(request: NextRequest) {
   // last request url
   const xUrl = request.nextUrl.pathname.split("/").pop() || "/";
-  console.log("xUrl", xUrl);
   request.headers.set("x-url", xUrl);
 
   // Mevcut middleware'i çağırın
