@@ -2,6 +2,8 @@ import { Pathnames } from "next-intl/navigation";
 
 export const locales = ["en", "tr"] as const;
 
+export const defaultLocale = "en";
+
 export const pathnames = {
   "/": "/",
   "/monkeypox-symptoms": {

@@ -1,13 +1,14 @@
 import createMiddleware from "next-intl/middleware";
-import { pathnames, locales, localePrefix } from "./localization/config";
-import { NextRequest, NextResponse } from "next/server";
+import { pathnames, locales, localePrefix, defaultLocale } from "./localization/config";
+import { NextRequest } from "next/server";
 
 // Mevcut middleware'i oluştur
 const intlMiddleware = createMiddleware({
-  defaultLocale: "en",
+  defaultLocale,
   locales,
   pathnames,
   localePrefix,
+  localeDetection: true,
 });
 
 export function middleware(request: NextRequest) {
