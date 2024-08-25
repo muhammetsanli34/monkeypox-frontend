@@ -1,8 +1,13 @@
-"use client";
-import { useTranslations } from "use-intl";
 import Overlay from "../../../components/overlay";
 import QandACarousel from "../../../page-sections/QandaCarousel";
 import QandA from "../../../page-sections/qanda";
+import getMetaData from "../../../actions/getMetaData";
+import { useTranslations } from "next-intl";
+
+export async function generateMetadata() {
+  return await getMetaData();
+}
+
 export default function MonkeypoxPage() {
   const t = useTranslations();
   return (

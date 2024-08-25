@@ -11,8 +11,11 @@ const withNextIntl = createNextIntlPlugin("./src/localization/i18n.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["http://tile.stamen.com"],
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 

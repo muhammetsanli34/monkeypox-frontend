@@ -11,6 +11,7 @@ interface MapProps {
 
 const AppMap: React.FC<MapProps> = ({ center, style }) => {
   const { calculatedCases, deathsByCountry, cases } = useCases();
+  console.log("cases", cases);
   const mapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {

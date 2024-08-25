@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import style from "./style.module.css";
-import Link from "next/navigation";
+import Link from "next/link";
 import useLocale from "../../hooks/useLocale";
 import useMenuItems from "../../hooks/useMenuItems";
 import Locale from "../../types/locale";
@@ -38,20 +38,13 @@ export default function MobileMenu() {
                 </span>
               </h1>
             </Link>
-            {menuItems?.map((item) => (
-              // <a
-              //   href={item.link}
-              //   className="text-lg
-              //   font-semibold
-              // "
-              //   key={item.text}
-              // >
-              //   {item.text}
-              // </a>
-              <Link href={item.link} key={item.text}>
-                <a className="text-lg font-semibold">{item.text}</a>
-              </Link>
-            ))}
+            <ul className="flex flex-col gap-4 px-4">
+              {menuItems?.map((item) => (
+                <Link href={item.link} key={item.text} className="font-bold">
+                  {item.text}
+                </Link>
+              ))}
+            </ul>
           </div>
           <i
             className="ti ti-x text-2xl absolute top-5 right-1"

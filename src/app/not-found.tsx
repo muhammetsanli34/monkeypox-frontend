@@ -1,6 +1,7 @@
 "use client";
 
 import Error from "next/error";
+import Navbar from "../components/navbar";
 
 export default function NotFound() {
   return (
