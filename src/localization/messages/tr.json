@@ -1,5 +1,19 @@
 {
     "home": "Ana Sayfa",
+    "meta": {
+        "tr": {
+            "title": "Maymun Çiçeği Takip",
+            "description": "Maymun Çiçeği hakkında güncel veriler ve bilgiler. Maymun Çiçeği belirtileri, yayılma yolları ve tedavi yöntemleri hakkında detaylı bilgiler."
+        },
+        "maymun-cicegi-belirtileri": {
+            "title": "Maymun Çiçeği Belirtileri",
+            "description": "Maymun Çiçeği belirtileri hakkında detaylı bilgiler. Maymun Çiçeği belirtileri, yayılma yolları ve tedavi yöntemleri hakkında detaylı bilgiler."
+        },
+        "maymun-cicegi-hakkinda": {
+            "title": "Maymun Çiçeği Hakkında",
+            "description": "Maymun Çiçeği hakkında detaylı bilgiler. Maymun Çiçeği belirtileri, yayılma yolları ve tedavi yöntemleri hakkında detaylı bilgiler."
+        }
+    },
     "navbar": {
         "home": "CANLI VERİ",
         "symptoms": "BELİRTİLER",

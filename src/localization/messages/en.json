@@ -1,5 +1,19 @@
 {
     "home": "Home",
+    "meta": {
+        "en": {
+            "title": "Monkeypox Tracker",
+            "description": "Monkeypox Tracker is a website that provides information about the monkeypox virus, its symptoms, and how it spreads. The website also provides the latest updates on the number of cases and deaths caused by the virus."
+        },
+        "monkeypox-symptoms": {
+            "title": "Monkeypox Symptoms",
+            "description": "Monkeypox Symptoms page provides information about the symptoms of the monkeypox virus, how it spreads, and what to do if you have been infected."
+        },
+        "about-monkeypox": {
+            "title": "About Monkeypox",
+            "description": "About Monkeypox page provides answers to frequently asked questions about the monkeypox virus, its symptoms, transmission, treatment, and prevention."
+        }
+    },
     "navbar": {
         "home": "TRACK DATA",
         "symptoms": "SYMPTOMS",

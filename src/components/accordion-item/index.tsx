@@ -25,7 +25,7 @@ export default function AccordionItem({
         }
         onClick={onClick}
       >
-        <p className="question-content">{question}</p>
+        <p className="font-semibold">{question}</p>
         <i className="ti ti-arrow-down"></i>
       </button>
 
