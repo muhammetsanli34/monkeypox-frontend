@@ -1,7 +1,10 @@
-import Overlay from "../components/overlay";
-import QandACarousel from "../page-sections/QandaCarousel";
-import QandA from "../page-sections/qanda";
-export default function Monkeypox() {
+"use client";
+import { useTranslations } from "use-intl";
+import Overlay from "../../../components/overlay";
+import QandACarousel from "../../../page-sections/QandaCarousel";
+import QandA from "../../../page-sections/qanda";
+export default function MonkeypoxPage() {
+  const t = useTranslations();
   return (
     <>
       <Overlay
@@ -9,11 +12,11 @@ export default function Monkeypox() {
         breadcrumb={[
           {
             link: "/",
-            text: "Anasayfa",
+            text: t("home"),
           },
           {
-            link: "/monkeypox",
-            text: "Maymun Çiçeği",
+            link: "/about-monkeypox",
+            text: t("monkeypox.breadcrumb"),
           },
         ]}
       />

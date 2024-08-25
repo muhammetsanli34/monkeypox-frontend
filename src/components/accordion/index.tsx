@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import AccordionItem from "../accordion-item";
 
@@ -7,7 +8,6 @@ const Accordion = ({
   question: string;
   answer: string | JSX.Element;
 }[]) => {
-  console.log(data);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {

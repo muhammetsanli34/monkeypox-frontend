@@ -1,8 +1,10 @@
+"use client";
+import { useTranslations } from "next-intl";
 import useCases from "../hooks/useCases";
 
 export default function CaseSummary() {
-  const { cases, totalCases, totalDeaths } = useCases();
-
+  const { totalCases, totalDeaths } = useCases();
+  const t = useTranslations();
   return (
     <div
       style={{
@@ -29,7 +31,7 @@ export default function CaseSummary() {
             py-8
             "
           >
-            Monkeypox Update
+            {t("summary.title")}
           </h3>
           <div className="flex items-center gap-8 flex-wrap">
             <div
@@ -38,7 +40,7 @@ export default function CaseSummary() {
             "
             >
               <div className="flex flex-col flex-1">
-                <h4 className=" text-blue-300">Total Cases</h4>
+                <h4 className=" text-blue-300">{t("summary.cases")}</h4>
                 <h2 className="text-4xl font-bold">{totalCases}</h2>
               </div>
               <i
@@ -53,7 +55,7 @@ export default function CaseSummary() {
               bg-white  p-8 rounded-lg flex justify-between items-center flex-1"
             >
               <div className="flex flex-col">
-                <h4 className=" text-red-300">Total Deaths</h4>
+                <h4 className=" text-red-300">{t("summary.deaths")}</h4>
                 <h2 className="text-4xl font-bold">{totalDeaths}</h2>
               </div>
               <i
