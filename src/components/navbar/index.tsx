@@ -1,15 +1,19 @@
+"use client";
 import MobileMenu from "../mobile-menu";
 import Link from "next/link";
 import useMenuItems from "../../hooks/useMenuItems";
 import Image from "next/image";
+import useLocale from "../../hooks/useLocale";
 
 export default function Navbar() {
   const menuItems = useMenuItems();
-
+  const locale = useLocale();
   return (
     <div className="container mx-auto">
       <div className="flex justify-between items-center py-4">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2"
+          locale={locale}
+        >
           <Image src="/logo.png" alt="logo" width={50} height={50} />
           <h1 className="text-lg font-bold">
             TRACK MONKEY
