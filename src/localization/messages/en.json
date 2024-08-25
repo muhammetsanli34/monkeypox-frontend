@@ -1,10 +1,16 @@
 {
+    "home": "Home",
     "navbar": {
         "home": "TRACK DATA",
         "symptoms": "SYMPTOMS",
         "monkeypox": "MONKEYPOX",
         "symptomsLink": "monkeypox-symptoms",
         "monkeypoxLink": "about-monkeypox"
+    },
+    "summary": {
+        "title": "Monkeypox Update",
+        "cases": "Total Cases",
+        "deaths": "Total Deaths"
     },
     "spread": {
         "title": "HOW MONKEYPOX SPREADS",
@@ -17,13 +23,15 @@
         "paragraph2": "Individuals with Mpox are considered contagious until all the blisters on their skin have scabbed over, fallen off, and a new layer of skin has formed underneath. This process generally takes two to four weeks. After recovering from Mpox, the disease can be contracted again.",
         "paragraph3": "If the disease progresses severely, hospital treatment, supportive care, and antiviral medications may be necessary to reduce the severity of the lesions and speed up the recovery process. The Mpox virus can be transmitted from an infected animal or another person carrying the virus.",
         "paragraph4": "Like any virus, Mpox also has an incubation period following infection. The initial symptoms typically appear between 5 and 21 days after infection, with the most common symptom onset occurring between days 6 and 13. While Mpox symptoms resemble those of smallpox, which has caused major outbreaks in the past, they may follow a different course.",
-        "symptom1": "Swollen lymph nodes,<br/>skin rashes",
+        "symptom1": "Swollen lymph nodes, skin rashes",
         "symptom2": "Fever",
         "symptom3": "Backache",
-        "symptom4": "Headache"
+        "symptom4": "Headache",
+        "breadcrumb": "Mpox Symptoms"
     },
     "monkeypox": {
         "title": "Frequently Asked Questions",
+        "breadcrumb": "About Monkeypox",
         "question1": "What is Monkeypox?",
         "answer1": "Mpox is a disease caused by the monkeypox virus. This viral infection can spread between people, usually through close contact, and can sometimes be transmitted from the environment to people through objects and surfaces that an infected person has come into contact with. In environments where the monkeypox virus is found among some wild animals, people who come into contact with infected animals can also contract the virus.",
         "question2": "What are the symptoms?",
@@ -50,45 +58,17 @@
         "answer4p2": "In 2022/2023, the majority of mpox cases in many countries were detected among men who have sex with gay, bisexual and other men. Given that the virus is passed from person to person within these sexual networks, people who have sex with gay, bisexual and other men may be at higher risk if they have sex or close contact with an infected person. People with multiple or new sexual partners are at highest risk. Raising awareness in the gay, bisexual and other men who have sex with men communities is vital to protect those at highest risk. If you as a man have sex with other men, know your risk and take steps to protect yourself and others. If you have symptoms consistent with Mpox, it is important to contact a health care provider immediately to get tested and receive treatment.",
         "question5": "What do we know about Mpox and sex?",
         "answer5p1": "Mpox can be spread through close contact with an infected person, such as kissing, touching, oral and penetrative vaginal or anal intercourse. People with multiple or new sexual partners are at highest risk.",
-        "answer5p2": "Anyone with new and unusual rashes or lesions should avoid sex or other types of close contact until they have been tested for sexually transmitted infections (STIs) and mpox. Remember that rashes can also be found in hard-to-see places on the body, such as the mouth, throat, genitals, vagina and anus.",
+        "answer5p2": "Anyone with new and unusual rashes or lesions should avoid sex or other types of close contact until they have been tested for sexually transmitted infections (STIs) and mpox. Remember that rashes can also be found in hard-to-see places on the body, such as the mouth, throat, genitals, vagina and anus",
         "answer5p3": "If you think that Mpox is being spread sexually in your community or region, consider reducing your risk until the outbreak is under control: ",
-        "answer5listElements": [
-            "Talk openly with your partners about the symptoms and risks of mpox.",
-            "Share contact details with your sexual partners so that you can inform each other if symptoms occur.",
-            "Abstain from sexual intercourse for a while.",
-            "Reduce new sexual partners, one-time partners or anonymous partners.",
-            "Use condoms at all times.",
-            "Avoid group sex.",
-            "Avoid places where sex takes place (e.g. cruising bars, saunas, dark rooms, commercial sex venues or other places where sex is paid for).",
-            "Avoid alcohol or drug use (including chemsex) in sexual contexts.",
-            "Consider vaccination if available and appropriate."
-        ],
+        "answer5listElements": "Talk openly with your partners about the symptoms and risks of mpox. Share contact details with your sexual partners so that you can inform each other if symptoms occur. Abstain from sexual intercourse for a while.Reduce new sexual partners, one-time partners or anonymous partners.Use condoms at all times.Avoid group sex.Avoid places where sex takes place. Avoid alcohol or drug use (including chemsex) in sexual contexts.Consider vaccination if available and appropriate.",
         "answer5p4": "Monkeypox virus has been found in semen, but it is not yet known if it can be transmitted through semen or vaginal fluids. Using a condom will not completely protect you from mpox, but it can reduce your risk or exposure and protect you and others from HIV and other sexually transmitted infections. People who have had mpox are advised to use condoms for 12 weeks after recovery.",
         "question6": "I have been infected with Monkeypox. What can I do to prevent others from getting infected?",
         "answer6p1": "If you have mpox, your healthcare provider will advise you on what to do during the recovery process. Follow national advice on whether you should recover at home or seek treatment at a health facility.",
         "answer6p2": "During this time, it is important to avoid close contact with others until your rash is completely healed.",
         "answer6p3": "When home isolation is recommended, follow these steps to protect the people you live with as much as possible:",
-        "answer6listElements1": [
-            "Ask friends and family to help you get what you need.",
-            "Isolate in a separate room.",
-            "Use a separate bathroom or clean the surfaces you touch after each use.",
-            "Clean and disinfect frequently touched surfaces with soap and water, followed by a household disinfectant.",
-            "Avoid sweeping/vacuuming (this can activate virus particles and infect others).",
-            "Use separate utensils, utensils and electronic devices or clean them thoroughly with soap and water or disinfectant before sharing.",
-            "Do not share towels, bedding or clothes.",
-            "Do your own laundry (carefully pick up your bedspreads, clothes and towels, carry them without shaking them, put them in a plastic bag and wash them in hot water over 60 degrees before taking them to the washing machine).",
-            "Open windows for good ventilation.",
-            "Encourage everyone in the household to clean their hands regularly with soap and water or alcohol-based hand sanitizer."
-        ],
+        "answer6listElements1": "Ask friends and family to help you get what you need. Isolate in a separate room. Use a separate bathroom or clean the surfaces you touch after each use. Clean and disinfect frequently touched surfaces with soap and water, followed by a household disinfectant. Avoid sweeping/vacuuming (this can activate virus particles and infect others). Use separate utensils, utensils and electronic devices or clean them thoroughly with soap and water or disinfectant before sharing. Do not share towels, bedding or clothes. Do your own laundry (carefully pick up your bedspreads, clothes and towels, carry them without shaking them, put them in a plastic bag and wash them in hot water over 60 degrees before taking them to the washing machine). Open windows for good ventilation. Encourage everyone in the household to clean their hands regularly with soap and water or alcohol-based hand sanitizer.",
         "answer6p4": "If you cannot avoid being in the same room or close contact with another person while isolated at home, you can reduce their risk:",
-        "answer6listElements2": [
-            "Avoid touching each other.",
-            "Clean your hands frequently with soap and water or alcohol-based hand sanitizer.",
-            "Cover your rash with clothing or bandages (until it is isolated again - your rash heals better when it is exposed).",
-            "Ensure good airflow by opening windows in the house.",
-            "You and the person you are in the room with should wear well-fitting medical masks.",
-            "Keep a distance of at least 1 meter from other people."
-        ],
+        "answer6listElements2": "Avoid touching each other. Clean your hands frequently with soap and water or alcohol-based hand sanitizer. Cover your rash with clothing or bandages (until it is isolated again - your rash heals better when it is exposed). Ensure good airflow by opening windows in the house. You and the person you are in the room with should wear well-fitting medical masks. Keep a distance of at least 1 meter from other people.",
         "question7": "What kind of care does someone with Mpox need to fully recover?",
         "answer7": "The care a person should receive depends on their symptoms and the risk of developing a more serious illness. People with Mpox should follow the advice of their health care provider. Symptoms usually last 2-4 weeks and usually go away on their own or with supportive care (such as analgesics and antipyretics) for pain or fever. It is important that mpox patients recovering at home drink enough water, eat well and get enough sleep. People in self-isolation should take care of their mental health, doing relaxing and enjoyable activities, staying in touch with loved ones using technology, exercising in isolation if they feel well enough, and asking for mental health support if they need it.People with Mpox should avoid scratching their skin and take good care of their rash. They should wash their hands before and after touching the lesions and keep their skin dry and exposed (if they need to be in the same room as someone else, they should cover their rash with clothing or bandages and remain so until they are isolated again). Rashes can be cleaned with sterilized water or antiseptic. Saline mouthwash can be used for sores in the mouth, and hot baths with baking soda and Epsom salts can be used to ease the discomfort caused by sores on the body. If necessary, paracetamol can be used to manage the pain caused by the lesions. If a stronger painkiller is needed, a health professional should be consulted.",
         "question8": "What should I do if a child in my care has Monkeypox?",
@@ -108,6 +88,5 @@
         "answer11": "Contracting mpox during pregnancy (considered a relatively immunosuppressed condition) can be dangerous for the fetus or newborn baby and can lead to loss of pregnancy, stillbirth, death of the newborn or complications for the parent. If you are pregnant, avoid close contact with someone who has mpox. Anyone who has close contact with an infected person can get mpox, no matter who they are. If you think you have been exposed to mpox or are showing symptoms that could be mpox, contact your health care provider. They will get you tested and help you get the care you need.",
         "question12": "I've had Monkeypox in the past. Can I catch it again?",
         "answer13": "Our understanding of how long immunity lasts after Mpox is still evolving. Cases of secondary infection have been reported. Some people who have had mpox in the past can become re-infected. Even if you have had mpox before, you should do everything you can to avoid being re-infected. If you have had mpox and someone in your household now has the disease, you can protect others by taking care of them, because you probably have more immunity than others. However, it is still important to take all precautions to avoid exposure as much as possible."
-
     }
 }

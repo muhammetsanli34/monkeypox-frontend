@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import "../index.css";
 import Navbar from "../components/navbar";
 import "leaflet/dist/leaflet.css";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export const metaData: Metadata = {
   title: "Track Monkey Pox",
@@ -11,9 +13,13 @@ export const metaData: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  unstable_setRequestLocale(params.locale);
+  const messages = useMessages();
   return (
     <html lang="en">
       <head>
@@ -32,9 +38,14 @@ export default function RootLayout({
       </head>
       <body>
         <div id="root">
-          <Navbar />
+          <NextIntlClientProvider
+            locale={params.locale}
+            messages={messages}
+          >
+            <Navbar />
 
-          {children}
+            {children}
+          </NextIntlClientProvider>
         </div>
       </body>
     </html>

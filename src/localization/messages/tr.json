@@ -1,4 +1,5 @@
 {
+    "home": "Ana Sayfa",
     "navbar": {
         "home": "CANLI VERİ",
         "symptoms": "BELİRTİLER",
@@ -12,18 +13,25 @@
         "paragraph1": "Mpox virüsü, enfekte bir kişiyle temas, cinsel ilişki, konuşma veya yakın mesafede solunum gibi durumlarla insandan insana bulaşabilir. Bu durumlar, bulaşıcı solunum partiküllerinin oluşmasına yol açabilir. Ancak, Dünya Sağlık Örgütü (DSÖ), virüsün farklı ortamlarda ve koşullarda yayılma şekliyle ilgili daha fazla araştırmaya ihtiyaç duyulduğunu belirtmektedir.",
         "paragraph2": "Bilim insanlarının bildiği kadarıyla, Mpox virüsü, enfekte bir kişinin temas ettiği giysiler, yatak takımları, havlular, nesneler, elektronik cihazlar ve yüzeylerde bir süre daha varlığını sürdürebilir. Bu eşyalarla temas eden bir kişi, ellerini yıkamadan önce gözlerine, burnuna veya ağzına dokunursa virüsü alabilir."
     },
+    "summary": {
+        "title": "Güncel Durum",
+        "cases": "Vaka Sayısı",
+        "deaths": "Ölüm Sayısı"
+    },
     "symptoms": {
         "paragraph1": "Mpox'un yaygın belirtileri genellikle iki ila dört hafta süren ateş, baş ağrısı, kas ve sırt ağrıları, düşük enerji seviyesi ve şişmiş lenf düğümleri ile başlar.",
         "paragraph2": "Mpox geçiren kişiler, ciltlerindeki tüm kabarcıklar kabuk bağlayıp düştükten ve altında yeni bir deri tabakası oluşana kadar bulaşıcı kabul edilir. Bu süreç genellikle iki ila dört hafta sürer. Mpox geçirdikten sonra, hastalık yeniden bulaşabilir.",
         "paragraph3": "Hastalığın şiddetli seyretmesi durumunda, lezyonların şiddetini azaltmak ve iyileşme süresini hızlandırmak amacıyla hastane tedavisi, destekleyici bakım ve antiviral ilaçlar gerekebilir. Mpox virüsü, enfekte bir hayvandan veya virüs taşıyan başka bir insandan bulaşabilir.",
         "paragraph4": "Her virüste olduğu gibi, Mpox virüsünde de enfeksiyonun ardından bir kuluçka dönemi vardır. İlk belirtiler genellikle enfeksiyondan sonraki 5 ile 21 gün arasında ortaya çıkar. Belirtilerin en yaygın görüldüğü dönem ise 6 ila 13. günler arasındadır. Mpox belirtileri, geçmişte büyük salgınlara neden olmuş olan çiçek hastalığına benzese de, farklı bir seyir izleyebilir.",
-        "symptom1": "Lenf düğümlerinde şişme,<br/>deri döküntüleri",
+        "symptom1": "Lenf düğümlerinde şişme,deri döküntüleri",
         "symptom2": "Ateş",
         "symptom3": "Sırt Ağrısı",
-        "symptom4": "Baş Ağrısı"
+        "symptom4": "Baş Ağrısı",
+        "breadcrumb": "Maymun Çiçeği Belirtiler"
     },
     "monkeypox": {
         "title": "Sıkça Sorulan Sorular",
+        "breadcrumb": "Maymun Çiçeği Hakkında",
         "question1": "Maymun Çiçeği Nedir?",
         "answer1": "Mpox, maymun çiçeği virüsünün neden olduğu bir hastalıktır. Bu viral enfeksiyon, genellikle yakın temas yoluyla insanlar arasında yayılabilir ve bazen de enfekte bir kişinin temas ettiği nesneler ve yüzeyler aracılığıyla çevreden insanlara bulaşabilir. Maymun çiçeği virüsünün bazı vahşi hayvanlar arasında bulunduğu ortamlarda, enfekte hayvanlarla temas eden kişiler de virüsü kapabilir.",
         "question2": "Semptomları Nelerdir?",

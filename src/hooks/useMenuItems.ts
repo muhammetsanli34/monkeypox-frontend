@@ -1,30 +1,25 @@
-"use client";
+import { useTranslations } from "next-intl";
 
-import { useEffect, useState } from "react";
-import getDictionary from "../helpers/get-dictionary";
-import Locale from "../types/locale";
-
-export default function useMenuItems(locale: Locale) {
-  const [dictionary, setDictionary] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    getDictionary(locale).then((dictionary) => {
-      setDictionary(dictionary);
-    });
-  }, [locale]);
-
+export default function useMenuItems() {
+  const t = useTranslations();
+  console.log(t);
   return [
     {
-      text: dictionary?.navbar?.home,
+      // text: dictionary?.navbar?.home,
+      text: t("navbar.home"),
       link: "/",
     },
     {
-      text: dictionary?.navbar?.symptoms,
-      link: dictionary.navbar?.symptomsLink || "/monkeypox-symptoms",
+      // text: dictionary?.navbar?.symptoms,
+      text: t("navbar.symptoms"),
+      // link: dictionary.navbar?.symptomsLink || "/monkeypox-symptoms",
+      link: t("navbar.symptomsLink") || "/monkeypox-symptoms",
     },
     {
-      text: dictionary?.navbar?.monkeypox,
-      link: dictionary?.navbar?.monkeypoxLink || "about-monkeypox",
+      // text: dictionary?.navbar?.monkeypox,
+      text: t("navbar.monkeypox"),
+      // link: dictionary?.navbar?.monkeypoxLink || "about-monkeypox",
+      link: t("navbar.monkeypoxLink") || "about-monkeypox",
     },
   ];
 }
