@@ -24,7 +24,11 @@ export default function RootLayout({
           href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro"
           rel="stylesheet"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+        <link rel="icon" href="./logo.ico" />
+        <link rel="apple-touch-icon" href="./logo.ico" />
+
+
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </head>
