@@ -8,7 +8,6 @@ import LogoWithText from "../logo-with-text";
 
 export default function Navbar() {
   const menuItems = useMenuItems();
-  const locale = useLocale();
   return (
     <div className="container mx-auto">
       <div className="flex justify-between items-center py-4">
